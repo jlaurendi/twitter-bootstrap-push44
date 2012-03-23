@@ -29,7 +29,8 @@
 @orange:                #f89406;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
-
+@pushGreen:							#7fb546;
+@pushGreenHover:				darken(@pushGreen, 15%);
 
 // Scaffolding
 // -------------------------
@@ -40,6 +41,7 @@
 // Links
 // -------------------------
 @linkColor:             #08c;
+//@linkColor:             #7fb546;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -69,8 +71,12 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         darken(@white, 20%);
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+//@btnPrimaryBackground:              @linkColor;
+//@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+
+@btnPrimaryBackground:              @pushGreen;
+@btnPrimaryBackgroundHighlight:     @pushGreenHover;
+
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
